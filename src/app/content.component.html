@@ -1,0 +1,12 @@
+<parent>
+  <ng-template #template let-item let-i="index">
+    <ng-container *ngIf="item == 3">
+      <button (click)="test(i)">click</button>
+      seulement si items existe {{ item }}/{{ i }}...
+    </ng-container>
+  </ng-template>
+
+  <ng-template #toto>
+      seulement si ngswitch
+  </ng-template>
+</parent>

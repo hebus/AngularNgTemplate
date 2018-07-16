@@ -1,2 +1,0 @@
-# AngularNgTemplate
-Created with CodeSandbox

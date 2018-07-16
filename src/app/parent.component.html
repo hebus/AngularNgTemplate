@@ -1,0 +1,14 @@
+<div>
+  <ng-container *ngFor="let item of items; let i = index">
+    {{ item }}
+    <ng-container *ngTemplateOutlet="template; context: {$implicit: item, index: i}"></ng-container>
+  </ng-container>
+  
+  <p>coucou
+
+  <ng-container [ngSwitch]="state">
+    <ng-container *ngSwitchCase="state === true">
+      <ng-container *ngTemplateOutlet="toto"></ng-container>
+    </ng-container>
+  </ng-container>
+</div>
